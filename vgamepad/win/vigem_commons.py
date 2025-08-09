@@ -143,6 +143,7 @@ class DS4_TOUCH(Structure):
 
 
 class DS4_SUB_REPORT_EX(Structure):
+    _pack_ = 1
     _fields_ = [("bThumbLX", c_byte),
                 ("bThumbLY", c_byte),
                 ("bThumbRX", c_byte),
